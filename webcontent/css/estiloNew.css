@@ -1,0 +1,218 @@
+@CHARSET "UTF-8";
+/*
+over-ride "Weak" message, show font in dark grey
+*/
+.progress-bar {
+	color: #333;
+}
+
+/*
+Reference:
+http://www.bootstrapzen.com/item/135/simple-login-form-logo/
+*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	@
+	include
+	box-sizing(border-box);
+	&:
+	focus
+	{
+	z-index
+	:
+	2;
+}
+
+}
+body {
+	background:
+		url(http://www.sunaironeenergy.es/wp-content/uploads/2013/03/fondo.jpg)
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.login-form {
+	margin-top: 60px;
+}
+
+form[role=login] {
+	color: #5d5d5d;
+	background: #f2f2f2;
+	padding: 26px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+form[role=login] img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+form[role=login] input, form[role=login] button {
+	font-size: 18px;
+	margin: 16px 0;
+}
+
+form[role=login]>div {
+	text-align: center;
+}
+
+.form-links {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 50px;
+}
+
+.form-links a {
+	color: #fff;
+}
+
+.bandera{
+	width: 30px;
+	border-radius:3px !important;
+	margin:10px;
+	height: 20px;
+	border:1px solid;
+}
+
+.version{
+	line-height: 10px;
+    position: relative;
+    top: 15px;
+}
+
+li.nav-item:hover a{
+	color:white !important;
+}
+
+.tituloSeccion{
+	margin-top:10px;
+	padding: 10px;
+}
+
+.textoSeccion{
+	margin-top:10px;
+	padding: 10px;
+}
+
+.eleccion{
+	margin:10px;
+	width:90%;
+	border-radius:5px !important;
+	color:white;
+	box-shadow:2px 1px #444 !important;
+	background-color: #AAA;
+}
+
+.eleccion.activo{
+	background-color: #4c87b9;
+}
+
+.ok{
+	color:green;
+	font-weight: 900;
+	font-size:1.7em !important;
+	position: relative;
+	top:15px;
+}
+
+.ko{
+	color:red;
+	font-weight: 900;
+	font-size:1.7em !important;
+	position: relative;
+	top:15px;
+}
+
+.resaltadoAzul{
+	background-color: #286090;
+	color:white;
+	font-weight: 900;
+}
+/*-----------------estilo para acomodar los inputs------------------*/
+.form-group.form-md-line-input{
+	margin: 0 0 10px;
+}
+.btn-fixed-padding {
+	    padding-top: 15px;
+		display: flex;
+}
+button {
+	border-radius: 10%;
+}
+.padding-fixed {
+	padding-top: 15px;
+}
+@media screen and (max-width: 991px) {
+	.fixed-input{ margin-bottom: 10px; }
+	.btn-fixed-padding { justify-content: center; }
+}
+/*------------------estilo para acomodar la barra de menu-----------------------*/
+.page-sidebar .page-sidebar-menu .sub-menu>li.active>a, .page-sidebar .page-sidebar-menu .sub-menu>li.open>a, .page-sidebar .page-sidebar-menu .sub-menu>li:hover>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li:hover>a {
+    background: rgb(1,144,54) !important;
+}
+
+/*-----------------estilo para dar borde al div de detalle Factura------------------*/
+.detalle_factura_sombra {
+	border: 1px solid black; 
+	-webkit-box-shadow: -5px 4px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -5px 4px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: -5px 4px 4px 0px rgba(0,0,0,0.75);
+	margin-bottom: 10px;
+	-webkit-border-radius: 1em!important; 
+    -moz-border-radius: 1em!important;
+    border-radius: 1em!important; 
+}
+/*-----------------estilo para posicionar el div info------------------*/
+.align-horizontal {
+	display: flex;
+  	justify-content: center;
+}
+.align-vertical {
+	display: flex;
+  	align-content: center;
+}
+/*-----------------estilo para posicionar los radios buttons en facturación------------------*/
+.radio-button-horizontal {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+	padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*-----------estilos responsive-------------*/
+/*---------estilo que acomoda el menu en vista movil----------*/
+@media (max-width: 991px) {
+	.page-sidebar .page-sidebar-menu .sidebar-search input, .page-sidebar .page-sidebar-menu>li .sub-menu {
+		background-color: #3598dc!important;
+	}
+}
+/*-------estilo para acomodar ENTORNO VIRTUAL--------*/
+.title-fixed { margin-bottom: 1px!important; }
+.justificar-texto { text-align: justify; }
+/*--------estilo para reducir el padding de jumbotron---------*/
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+/*-----estilo para corregir el select de IBAN----*/
+.select-fixed {
+	padding-top: 0px!important;
+}
